@@ -1,0 +1,141 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-color: #ffff ;
+}
+
+.header {
+   
+}
+.navbar {
+    background-color: cornflowerblue;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+    position: relative;
+    
+ 
+
+}   
+.menu_hamburguesa{
+    display: none;  
+}
+.Logo {
+   
+
+}
+.labe_hamburguesa {
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+
+
+}
+.list_icon {
+
+    cursor: pointer;
+}
+.ul_links {
+    float: right;
+    margin-right: 20px;
+
+}
+.li_links {
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 15px ;
+    
+}
+.link {
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+
+section{
+    background: url(imagen/Fondas.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+
+}
+
+@media (min-width:768px){
+    .labe_hamburguesa {
+        display: none;
+    }
+    .ul_links{
+       
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        background-color:rgb(246, 76, 64) ;
+    }
+}
+@media (max-width: 768px) {
+
+
+    .labe_hamburguesa {
+        display: block;
+    }
+    .ul_links {
+
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgb(80, 134, 236);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        transition: top 0.5s ease;
+
+        z-index: 999;
+    }
+
+    .li_links {
+        display: block;
+        margin: 0;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+    .link:hover{
+        background-color:rgb(246, 76, 64) ;
+    }
+    .menu_hamburguesa:checked ~ .ul_links {
+
+        left: 0;
+
+    }
+
+}
+
+
