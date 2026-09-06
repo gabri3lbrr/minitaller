@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Fonda del LocoRene</title>
+    <link rel="icon" type="image/png" href="imagen/favicon-rene.png">
     <!--Link que abre bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
     <header class="header"> 
          <!-- NAVBAR -->
         <nav class="navbar">
-            <h1 class="Logo"> LOGO </h1>
+            <a href="#inicio"> <img src="imagen/logo-rene.png" class="logo" alt="Logo de la fonda"> </a>
             <label class="labe_hamburguesa" for="menu_hamburguesa">
                 <svg xmlns="http://www.w3.org/2000/svg" 
                 width="40" 
@@ -32,16 +32,16 @@
             <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
             <ul class="ul_links">
                 <li class="li_links">
-                    <a href="#" class="link">inicio</a>
+                    <a href="#inicio" class="link">Inicio</a>
                 </li>
                 <li class="li_links">
-                    <a href="#" class="link">inicio</a>
+                    <a href="#atractivos" class="link">Atractivos</a>
                 </li>
                 <li class="li_links">
-                    <a href="#" class="link">inicio</a>
+                    <a href="#cronograma" class="link">Cronograma</a>
                 </li>
                 <li class="li_links">
-                    <a href="#" class="link">inicio</a>
+                    <a href="#mapa" class="link">Mapa</a>
                 </li>
             </ul>
                 
@@ -51,7 +51,7 @@
 
 
     <!-- HERO -->
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="container text-center text-white">
             <h1 class="display-1 fw-bold">
                 Fonda del LocoRene
@@ -69,46 +69,140 @@
         </div>
     </section>
     
-    <section class="informacion-evento">
-        <p>Aca iria la informacion del evento, agregarle style y cosas asi</p>
-        <!--Aca agregarle la info-->
+    <!-- Informacion -->
+    <section id="informacion" class="py-5 bg-white">
 
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="display-5 fw-bold">
+                    Información del Evento
+                </h2>
+
+                <p class="lead text-secondary">
+                    Todo lo que necesitas saber para disfrutar de nuestra fonda.
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center g-4">
+
+                <div class="col-12 col-md-8">
+
+                    <div class="card h-100 shadow-lg border-danger">
+
+                        <div class="card-body p-4">
+
+                            <h3 class="card-title fw-bold text-danger mb-4">
+                                Sobre el evento
+                            </h3>
+
+                            <p class="card-text fs-5">
+                                Lo invitamos cordialmente a celebrar estas Fiestas Patrias 
+                                junto a nosotros. Contamos con un programa pensado para todas 
+                                las edades: juegos típicos para entretener a los más chicos durante 
+                                la tarde, y la mejor música en vivo para que los más grandes puedan 
+                                zapatear como corresponde. Venga a vivir un 18 inolvidable al estilo 
+                                del Tío Rene.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-4">
+
+                    <div class="card h-100 shadow-lg border-primary">
+
+                        <div class="card-body p-4">
+
+                            <h3 class="card-title fw-bold text-primary mb-4">
+                                Datos del evento
+                            </h3>
+
+                            <div class="mb-4">
+                                <h5 class="fw-bold mb-1">📅 Fecha</h5>
+                                <p class="text-secondary mb-0">
+                                    17, 18 y 19 de septiembre
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5 class="fw-bold mb-1">📍 Lugar</h5>
+                                <p class="text-secondary mb-0">
+                                    Calle vasco de gama con maipu #6767, Santiago
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 class="fw-bold mb-1">🕐 Horario</h5>
+                                <p class="text-secondary mb-0">
+                                    12:00 - 00:00
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
+
+
+    <!-- Atractivos -->
+    <section id="atractivos" class="atractivos py-5 bg-light">
+
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">
+                Nuestros Atractivos
+            </h2>
+            <div class="row justify-content-center g-4">
     
-    <section class="atractivos">
+                
+                
+                <!--Atractivo 1-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg border-danger">
+                        <img src="imagen/parrillada.png" class="card-img-top img-fluid" alt="carnes asadas, anticuchos y choripanes">
+                        <div class="card-body">
+                            <h5>¡Parrilladas!</h5>
+                            <p class="card-text">El verdadero ambiente dieciochero se vive al calor de las brasas. Cortes de carne premium, anticuchos gigantes y choripanes jugosos. El sabor chileno perfecto para compartir con los tuyos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Atractivo 2-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg border-primary">
+                        <img src="imagen/cabeza-de-tanke.jpg" class="card-img-top img-fluid" alt="Rene puente show en vivo">
+                        <div class="card-body">
+                            <h5>¡Musica en vivo!</h5>
+                            <p class="card-text">Los mejores hits de Rene Puente llegan a la fonda para retumbar la casa junto con artistas urbanos del momento y parrilla de artistas cuequeros</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Atractivo 3-->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-lg border-danger">
+                        <img src="imagen/cueca.png" class="card-img-top img-fluid" alt="Bailes tipicos cueca chilena">
+                        <div class="card-body">
+                            <h5>¡A zapatear!</h5>
+                            <p class="card-text">Prepara el pañuelo y sácale brillo a la pista. Disfruta de un espacio exclusivo para nuestro baile nacional, con agrupaciones folclóricas en vivo y competencias para los más motivados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!--Probando la clase fila para poner los atractivos en fila (ROW)-->
-        <div class="row">
-            
-            <!--Atractivo 1-->
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-    </div>
-            <!--Atractivo 2-->
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-    </div>
-            <!--Atractivo 3-->
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        </div>
-    </div>
-
-        </div>
     </section>
 
     <hr>
     <!-- Cronograma -->
-     <section id="Cronograma" class="py-5 ">
+     <section id="cronograma" class="py-5 ">
         <div class="container">
             <div class="text text-center mb-5">
                 <H2 class="fw-bold" >Cronograma</H2>
@@ -191,7 +285,7 @@
      <hr>
 
      <!-- Mapa -->
-     <section id="Mapa" class="py-5 ">
+     <section id="mapa" class="py-5 ">
         <div class="container">
             <div class="text text-center mb-5">
                 <H2 class="fw-bold" >¿Como llego?</H2>

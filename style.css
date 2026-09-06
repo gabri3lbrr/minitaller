@@ -13,7 +13,9 @@ body{
 }
 
 .header {
-   
+    width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 .navbar {
     background-color: cornflowerblue;
@@ -27,16 +29,15 @@ body{
     padding: 0 40px;
 
     position: relative;
-    
- 
+
 
 }   
 .menu_hamburguesa{
     display: none;  
 }
-.Logo {
-   
-
+.logo { 
+    height: 100px;
+    width: auto;
 }
 .labe_hamburguesa {
     cursor: pointer;
